@@ -1,2 +1,133 @@
-# Typio
-Eine Legasthenie Tastatur die für Menschen gemacht wurde die sie brauchen 
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 2.5rem;background:#fff;border-bottom:0.5px solid var(--typio-mid);position:sticky;top:0;z-index:10;}
+.logo{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:900;letter-spacing:-0.5px;color:var(--typio-ink);}
+.logo span{color:var(--typio-accent);}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{font-size:0.9rem;color:var(--typio-muted);text-decoration:none;font-weight:400;}
+.nav-links a:hover{color:var(--typio-ink);}
+.nav-cta{background:var(--typio-ink);color:#fff;border:none;padding:0.55rem 1.3rem;border-radius:99px;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:500;cursor:pointer;}
+
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;padding:5rem 2.5rem 4rem;max-width:1100px;margin:0 auto;}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--typio-accent-soft);color:var(--typio-accent);font-size:0.78rem;font-weight:500;padding:0.35rem 0.9rem;border-radius:99px;margin-bottom:1.5rem;}
+.hero-badge .dot{width:6px;height:6px;background:var(--typio-accent);border-radius:50%;}
+h1{font-family:'Fraunces',serif;font-size:3.4rem;font-weight:900;line-height:1.1;letter-spacing:-1.5px;margin-bottom:1.25rem;color:var(--typio-ink);}
+h1 em{color:var(--typio-accent);font-style:normal;}
+.hero-sub{font-size:1.05rem;color:var(--typio-muted);line-height:1.7;margin-bottom:2rem;max-width:420px;}
+.hero-btns{display:flex;gap:1rem;}
+.btn-primary{background:var(--typio-accent);color:#fff;border:none;padding:0.75rem 1.75rem;border-radius:99px;font-size:0.95rem;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;}
+.btn-secondary{background:transparent;color:var(--typio-ink);border:1.5px solid var(--typio-mid);padding:0.75rem 1.75rem;border-radius:99px;font-size:0.95rem;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif;}
+
+.keyboard-mockup{background:#fff;border-radius:20px;border:0.5px solid var(--typio-mid);padding:1.5rem;box-shadow:0 8px 40px rgba(0,0,0,0.07);}
+.kb-screen{background:var(--typio-soft);border-radius:12px;padding:1rem 1.2rem;margin-bottom:1rem;font-size:0.85rem;color:var(--typio-muted);line-height:1.6;}
+.kb-highlight{background:#fffbeb;border-left:3px solid #f59e0b;padding:0.4rem 0.6rem;border-radius:0 6px 6px 0;font-size:0.82rem;color:#92400e;margin-top:0.5rem;}
+.kb-rows{display:flex;flex-direction:column;gap:5px;}
+.kb-row{display:flex;gap:5px;justify-content:center;}
+.key{background:#f1ede8;border-radius:6px;padding:0.4rem 0.6rem;font-size:0.75rem;font-weight:500;min-width:32px;text-align:center;color:var(--typio-ink);border-bottom:2.5px solid #d9d3cb;}
+.key.special{background:var(--typio-accent);color:#fff;border-bottom-color:#1a4fc7;min-width:60px;}
+.key.highlight{background:#fef3c7;border-bottom-color:#d97706;color:#92400e;}
+
+.stats-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--typio-mid);border-top:0.5px solid var(--typio-mid);border-bottom:0.5px solid var(--typio-mid);}
+.stat{background:#fff;padding:2rem;text-align:center;}
+.stat-num{font-family:'Fraunces',serif;font-size:2.4rem;font-weight:900;color:var(--typio-ink);letter-spacing:-1px;display:block;}
+.stat-label{font-size:0.85rem;color:var(--typio-muted);margin-top:4px;display:block;}
+
+.features{padding:5rem 2.5rem;max-width:1100px;margin:0 auto;}
+.section-label{font-size:0.78rem;font-weight:500;color:var(--typio-accent);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:0.75rem;}
+.section-title{font-family:'Fraunces',serif;font-size:2.2rem;font-weight:900;letter-spacing:-1px;margin-bottom:3rem;color:var(--typio-ink);}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
+.feature-card{background:#fff;border-radius:16px;border:0.5px solid var(--typio-mid);padding:1.5rem;}
+.feature-icon{width:42px;height:42px;background:var(--typio-accent-soft);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1.3rem;}
+.feature-title{font-weight:600;font-size:0.95rem;margin-bottom:0.5rem;color:var(--typio-ink);}
+.feature-desc{font-size:0.85rem;color:var(--typio-muted);line-height:1.6;}
+
+.how{background:#fff;padding:5rem 2.5rem;border-top:0.5px solid var(--typio-mid);}
+.how-inner{max-width:1100px;margin:0 auto;}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem;}
+.step{text-align:center;padding:1.5rem 1rem;}
+.step-num{width:44px;height:44px;border-radius:50%;background:var(--typio-accent);color:#fff;font-family:'Fraunces',serif;font-size:1.3rem;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;}
+.step-title{font-weight:500;font-size:0.9rem;margin-bottom:0.4rem;color:var(--typio-ink);}
+.step-desc{font-size:0.82rem;color:var(--typio-muted);line-height:1.6;}
+
+.about{padding:5rem 2.5rem;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+.about-tag{background:#f0fdf4;color:#15803d;font-size:0.78rem;font-weight:500;padding:0.3rem 0.8rem;border-radius:99px;display:inline-block;margin-bottom:1rem;}
+.about h2{font-family:'Fraunces',serif;font-size:2rem;font-weight:900;letter-spacing:-0.75px;margin-bottom:1.25rem;color:var(--typio-ink);}
+.about p{font-size:0.95rem;color:var(--typio-muted);line-height:1.8;margin-bottom:1rem;}
+.about-card{background:#fff;border-radius:16px;border:0.5px solid var(--typio-mid);padding:1.75rem;}
+.quote{font-size:1.1rem;font-style:italic;color:var(--typio-ink);line-height:1.7;margin-bottom:1rem;}
+.quote-author{font-size:0.85rem;font-weight:500;color:var(--typio-muted);}
+
+.cta-section{background:var(--typio-ink);color:#fff;padding:5rem 2.5rem;text-align:center;}
+.cta-section h2{font-family:'Fraunces',serif;font-size:2.5rem;font-weight:900;letter-spacing:-1px;margin-bottom:1rem;}
+.cta-section p{font-size:1rem;color:rgba(255,255,255,0.6);margin-bottom:2rem;}
+.btn-white{background:#fff;color:var(--typio-ink);border:none;padding:0.85rem 2.2rem;border-radius:99px;font-size:1rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;}
+
+footer{background:#fff;border-top:0.5px solid var(--typio-mid);padding:2rem 2.5rem;display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;color:var(--typio-muted);}<!-- HAUPTÜBERSCHRIFT -->
+<h1>Eine Tastatur ,<br>die sich <em>richtig</em><br>anfühlt.</h1>
+
+<!-- UNTERTEXT -->
+<p class="hero-sub">
+  Typio ist eine speziell entwickelte Tastatur, die Menschen mit Legasthenie hilft,
+  klarer, schneller und selbstsicherer zu schreiben.
+</p>
+
+<div class="hero-btns">
+  <button class="btn-primary">Jetzt entdecken</button>   <!-- BUTTON 1 -->
+  <button class="btn-secondary">Mehr erfahren</button>   <!-- BUTTON 2 -->
+</div><div class="feature-card">
+  <div class="feature-icon">👁️</div>
+  <div class="feature-title">Visuelle Hilfen</div>         <!-- FEATURE TITEL 1 -->
+  <div class="feature-desc">Wordkruppen die für Legasthenie schwar sind werden  mit versidene Farben markiert.</div>
+</div>
+
+<div class="feature-card">
+  <div class="feature-icon">⌨️</div>
+  <div class="feature-title">Optimiertes Layout</div>      <!-- FEATURE TITEL 2 -->
+  <div class="feature-desc">Das Tastaturlayout ist speziell auf die Bedürfnisse von Menschen mit Legasthenie angepasst.</div>
+</div>
+
+<div class="feature-card">
+  <div class="feature-icon">🧠</div>
+  <div class="feature-title">Intelligente Korrektur</div>  <!-- FEATURE TITEL 3 -->
+  <div class="feature-desc">Typio erkennt typische Legasthenie-Fehler und hilft, sie sanft zu korrigieren – ohne Druck.</div>
+</div>
+
+<div class="feature-card">
+  <div class="feature-icon">🎛️</div>
+  <div class="feature-title">Anpassbar</div>               <!-- FEATURE TITEL 4 -->
+  <div class="feature-desc">Schriftgröße, Abstände und Farben lassen sich individuell einstellen – jeder Mensch ist anders.</div>
+</div>
+
+<div class="feature-card">
+  <div class="feature-icon">💻</div>
+  <div class="feature-title">Kompatibel</div>              <!-- FEATURE TITEL 5 -->
+  <div class="feature-desc">Funktioniert mit allen gängigen Geräten – PC, Laptop und Tablet.</div>
+</div>
+
+<div class="feature-card">
+  <div class="feature-icon">❤️</div>
+  <div class="feature-title">Mit Empathie entwickelt</div> <!-- FEATURE TITEL 6 -->
+  <div class="feature-desc">Typio wurde entwickelt, um echte Hilfe zu leisten – nicht um zu ersetzen, sondern zu stärken.</div>
+</div>  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-title">Typio anschließen</div>        <!-- SCHRITT 1 TITEL -->
+    <div class="step-desc">Tastatur einfach per USB oder Bluetooth verbinden – keine Installation nötig.</div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-title">Profil einrichten</div>        <!-- SCHRITT 2 TITEL -->
+    <div class="step-desc">Persönliche Einstellungen auswählen – Farben, Schrift, Korrekturstufe.</div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-title">Loslegen</div>                 <!-- SCHRITT 3 TITEL -->
+    <div class="step-desc">Einfach schreiben – Typio arbeitet leise im Hintergrund mit.</div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-title">Fortschritt sehen</div>        <!-- SCHRITT 4 TITEL -->
+    <div class="step-desc">Mit der App den eigenen Fortschritt verfolgen und feiern.</div>
+  </div>
+
+</div>
